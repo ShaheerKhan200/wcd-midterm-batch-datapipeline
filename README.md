@@ -3,23 +3,23 @@
 ## Following files are included in this repository:
 
 ### Files used:
-* lambda.py: main aws lambda function python code. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/twitter-archive-enhanced.csv).
-* send_email.py: aws lambda function python code to send email upon failure. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/twitter-archive-enhanced.csv).
-* transformation.py: aws lambda function python code to perform basic transformations. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/twitter-archive-enhanced.csv).
-* Midterm_Transformation_Script.ipynb: pyspark transformation code to be used in EMR for data transformations. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/image-predictions.tsv).
-* midterm_dag.py: airflow dag file. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/tweet_json.txt).
-* 1.Data_Loading_Script_-_Arch_1.sql: snowflake sql file to set up data loading in snowflake. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/tweet_json.txt).
-* 2.Data_Integration.sql: snowflake sql file to set up data integration with AWS S3 in snowflake. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/tweet_json.txt).
-* 3.stored_procedure_-_Automated_Data_Dump.sql: Stored Procedure using Python and SQL to automate data dumping to S3 from Snowflake. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/tweet_json.txt).
+* lambda.py: main aws lambda function python code. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/lambda.py).
+* send_email.py: aws lambda function python code to send email upon failure. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/send_email.py).
+* transformation.py: aws lambda function python code to perform basic transformations. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/transformation.py).
+* Midterm_Transformation_Script.ipynb: pyspark transformation code to be used in EMR for data transformations. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/Midterm_Transformation_Script.ipynb).
+* midterm_dag.py: airflow dag file. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/midterm_dag.py).
+* 1.Data_Loading_Script_-_Arch_1.sql: snowflake sql file to set up data loading in snowflake. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/1.Data_Loading_Script_-_Arch_1.sql).
+* 2.Data_Integration.sql: snowflake sql file to set up data integration with AWS S3 in snowflake. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/2.Data_Integration.sql).
+* 3.stored_procedure_-_Automated_Data_Dump.sql: Stored Procedure using Python and SQL to automate data dumping to S3 from Snowflake. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/3.stored_procedure_-_Automated_Data_Dump.sql).
 
 
 ### Result:
-* Batch_Pipeline_-_Shaheer_WCD.pptx: Overview of the project. This can be found [here](https://github.com/ShaheerKhan200/Twitter-Data-Analysis-WeRateDogs--Data-Wrangling-Project/blob/main/twitter_archive_master.csv).
+* Batch_Pipeline_-_Shaheer_WCD.pptx: Overview of the project. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/Batch_Pipeline_-_Shaheer_WCD.pptx).
 
 
-## Dataset
+## Project
 
-> The dataset that I have wrangled, analyzed and visualized is the tweet archive of Twitter user [@dog_rates](https://twitter.com/dog_rates), also known as WeRateDogs. [WeRateDogs](https://en.wikipedia.org/wiki/WeRateDogs) is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, almost always greater than 10. For example, 11/10, 12/10, 13/10, etc. WeRateDogs has over 8 million followers and has received international media coverage.
+> The dataset that I have wrangled, analyzed and visualized is the tweet archive of Twitter user [@dog_rates](https://twitter.com/dog_rates), also known as WeRateDogs. These ratings almost always have a denominator of 10. The numerators, almost always greater than 10. For example, 11/10, 12/10, 13/10, etc. WeRateDogs has over 8 million followers and has received international media coverage.
 
 Feature Engineering was done to produce:
 > * Rating Classification - rating_numerator_new less than and equals to 10 or more than 10 was categorized into 'Low Rating' or 'High Rating' (Categorical)
