@@ -1,4 +1,6 @@
-# wcd-midterm-batch-datapipeline
+# Transactional Batch Data Pipeline
+
+A batch data pipeline hosted on AWS using tools such as S3, Snowflake, Cloudwatch+Lambda, Airflow, EMR, Athena and Glue. This project encompass setting up a warehouse with tables for sales, product, store, inventory and calendar. Then creating integrations with S3 for the data load and creating stored procedures using python to automate data dumping to S3 from Snowflake using lambda.
 
 ## Following files are included in this repository:
 
