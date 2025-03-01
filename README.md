@@ -14,7 +14,7 @@
 
 
 ### Result:
-* Batch_Pipeline_-_Shaheer_WCD.pptx: Overview of the project. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/Batch_Pipeline_-_Shaheer_WCD.pptx).
+* Batch_Pipeline_-_Shaheer_WCD.pptx: Overview of the project. This can be found [here](https://github.com/ShaheerKhan200/wcd-midterm-batch-datapipeline/blob/main/Batch_Pipeline_-_Shaheer_WCD.pdf).
 
 
 ## Project
